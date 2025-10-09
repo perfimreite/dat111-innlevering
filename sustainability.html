@@ -4,35 +4,40 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TechCare - Berekraft</title>
-        <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <header>
             <nav>
-                <a href="index.html">Heim</a>
-                <a href="solutions.html">Løysningar</a>
-                <a href="status.html">Status</a>
-                <a href="sustainability.html">Berekraft</a>
-                <a href="contact.html">Kontakt oss</a>
+                <a class="nav-link" id="home" href="index.html">Heim</a>
+                <a class="nav-link" href="solutions.html">Løysningar</a>
+                <a class="nav-link" href="status.html">Status</a>
+                <a class="nav-link" href="sustainability.html">Berekraft</a>
+                <a class="nav-link" href="contact.html">Kontakt oss</a>
             </nav>
         </header>
 
         <h1>Berekraft og samfunnsansvar</h1>
-        <p>
-            TechCare lagar elektroniske løysningar for dei svake i samfunnet, med effektivitet, tryggleik og berekraft
-            som kjerneverdiar, og FN sine berekraftsmål er sentral i alt vi gjer! Vi strevar for å byggja ei betre verd
-            for alle dei framtidige generasjonane.
-        </p>
 
-        <h2>Me jobbar for i samband med fleire av FN sine berekraftsmål</h2>
-        <div>
-            <img src="./img/FN_berekraftsmål_3.png" alt="FN berekraftsmål 3" />
-            <img src="./img/FN_berekraftsmål_9.png" alt="FN berekraftsmål 9" />
-            <img src="./img/FN_berekraftsmål_10.png" alt="FN berekraftsmål 10" />
-            <img src="./img/FN_berekraftsmål_13.png" alt="FN berekraftsmål 13" />
+        <div id="sustainability-hero">
+            <p>
+                TechCare lagar elektroniske løysningar for dei svake i samfunnet, med effektivitet, tryggleik og
+                berekraft som kjerneverdiar. FN sine berekraftsmål er sentral i alt vi gjer! Vi strevar for å byggja ei
+                betre verd for alle dei framtidige generasjonane.
+            </p>
+
+            <h2>Me jobbar i samband med fleire av FN sine berekraftsmål</h2>
+            <div class="img-container">
+                <img class="UN-goal" src="./img/FN_berekraftsmål_3.png" alt="FN berekraftsmål 3" />
+                <img class="UN-goal" src="./img/FN_berekraftsmål_9.png" alt="FN berekraftsmål 9" />
+                <img class="UN-goal" src="./img/FN_berekraftsmål_10.png" alt="FN berekraftsmål 10" />
+                <img class="UN-goal" src="./img/FN_berekraftsmål_13.png" alt="FN berekraftsmål 13" />
+            </div>
         </div>
 
-        <div>
+        <hr />
+
+        <div id="sustainability-container">
             <div>
                 <h3>Miljø</h3>
                 <p>
@@ -45,6 +50,7 @@
                     omsorgssektor som tek vare på både menneske og natur.
                 </p>
             </div>
+
             <div>
                 <h3>Sosialt</h3>
                 <p>
@@ -57,6 +63,7 @@
                     endring.
                 </p>
             </div>
+
             <div>
                 <h3>Etikk</h3>
                 <p>
@@ -71,14 +78,18 @@
             </div>
         </div>
 
-        <img src="./img/techcare_illustration.png" alt="TechCare illustrasjon" />
+        <div class="img-container">
+            <img id="illustration" src="./img/techcare_illustration.png" alt="TechCare illustrasjon" />
+        </div>
 
         <footer>
             <div>
                 <b>Følg Oss!</b>
-                <a href="https://facebook.com/"><img src="./img/icons/facebook.png" alt="facebook" /></a>
-                <a href="https://instagram.com/"><img src="./img/icons/instagram.png" alt="instagram" /></a>
-                <a href="https://linkedin.com/"><img src="./img/icons/linkedin.png" alt="linkedin" /></a>
+                <div id="socials-container">
+                    <a href="https://facebook.com/"><img src="./img/icons/facebook.png" alt="facebook" /></a>
+                    <a href="https://instagram.com/"><img src="./img/icons/instagram.png" alt="instagram" /></a>
+                    <a href="https://linkedin.com/"><img src="./img/icons/linkedin.png" alt="linkedin" /></a>
+                </div>
             </div>
             <p>&copy; 2025 TechCare. Alle rettar reservert.</p>
         </footer>

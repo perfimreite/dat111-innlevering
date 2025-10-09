@@ -4,24 +4,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TechCare - Løysningar</title>
-        <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <header>
             <nav>
-                <a href="index.html">Heim</a>
-                <a href="solutions.html">Løysningar</a>
-                <a href="status.html">Status</a>
-                <a href="sustainability.html">Berekraft</a>
-                <a href="contact.html">Kontakt oss</a>
+                <a class="nav-link" id="home" href="index.html">Heim</a>
+                <a class="nav-link" href="solutions.html">Løysningar</a>
+                <a class="nav-link" href="status.html">Status</a>
+                <a class="nav-link" href="sustainability.html">Berekraft</a>
+                <a class="nav-link" href="contact.html">Kontakt oss</a>
             </nav>
         </header>
 
         <h1>Våre løysningar og resultat</h1>
-        <h2>Dette er me opptekne av</h2>
 
-        <div>
-            <div>
+        <div class="info">
+            <div class="info-container red">
                 <b>Digital helseplattform for Sunnfjord kommune</b>
                 <p>
                     Vår digitale helseplattform, TechCare, er ei komplett løysing for Sunnfjord kommune som samlar alle
@@ -33,7 +32,7 @@
                     seg trygge på å bruke plattformen, få oversikt over eigen helse og ta aktive val i kvardagen.
                 </p>
             </div>
-            <div>
+            <div class="info-container blue">
                 <b>Påliteleg og oversiktleg informasjon</b>
                 <p>
                     Vi legg stor vekt på at all informasjon som vert vist og delt i plattforma skal vere korrekt og
@@ -45,7 +44,7 @@
                     dokumentasjon kan ein også spore kor informasjon kjem frå og kven som har brukt den.
                 </p>
             </div>
-            <div>
+            <div class="info-container blue">
                 <b>Automatiserte prosessar</b>
                 <p>
                     Automatisering er ei av nøklene til å få helse- og omsorgstenestene til å fungere betre utan at
@@ -57,7 +56,7 @@
                     raskare respons ved behov og meir proaktiv oppfølging i staden for berre reaktiv hjelp.
                 </p>
             </div>
-            <div>
+            <div class="info-container red">
                 <b>Betre kvardag for heimebuande eldre/sjuke, pårørande og heimesjukepleiarar</b>
                 <p>
                     Med TechCare får heimebuande eldre og sjuke betre moglegheit til å leve trygt og sjølvstendig i
@@ -75,9 +74,11 @@
         <footer>
             <div>
                 <b>Følg Oss!</b>
-                <a href="https://facebook.com/"><img src="./img/icons/facebook.png" alt="facebook" /></a>
-                <a href="https://instagram.com/"><img src="./img/icons/instagram.png" alt="instagram" /></a>
-                <a href="https://linkedin.com/"><img src="./img/icons/linkedin.png" alt="linkedin" /></a>
+                <div id="socials-container">
+                    <a href="https://facebook.com/"><img src="./img/icons/facebook.png" alt="facebook" /></a>
+                    <a href="https://instagram.com/"><img src="./img/icons/instagram.png" alt="instagram" /></a>
+                    <a href="https://linkedin.com/"><img src="./img/icons/linkedin.png" alt="linkedin" /></a>
+                </div>
             </div>
             <p>&copy; 2025 TechCare. Alle rettar reservert.</p>
         </footer>
