@@ -1,0 +1,168 @@
+/* ==========================
+   TechCare - Felles stil
+   ========================== */
+
+:root {
+    --green: #2e8b57; /* Hovedfarge: grønn */
+    --green-light: #3cb371;
+    --black: #111;
+    --white: #fff;
+    --gray-light: #f4f4f4;
+    --gray-dark: #333;
+    --max-width: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--green);
+    color: var(--white);
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s, background-color 0.2s;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-link:hover,
+#home {
+    background-color: var(--white);
+    color: var(--green);
+}
+
+h1, h2, h3 {
+    color: var(--green);
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 1.5em;
+}
+
+p, ul, li {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+ul {
+    padding-left: 1.5em;
+}
+
+
+.info, #contact, #sustainability-container {
+    max-width: var(--max-width);
+    margin: 2em auto;
+    display: grid;
+    gap: 1.5em;
+}
+
+.info > div,
+#contact > div,
+#sustainability-container > div {
+    background-color: var(--gray-light);
+    border-left: 5px solid var(--green);
+    padding: 1.5em;
+    border-radius: 10px;
+}
+
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.UN-goal {
+    width: 120px;
+}
+
+#illustration {
+    width: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th, td {
+    border: 1px solid var(--gray-dark);
+    padding: 0.7em;
+    text-align: left;
+}
+
+th {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 2em;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 0.5em 0;
+}
+
+#socials-container img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease;
+}
+
+#socials-container img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .info, #contact, #sustainability-container {
+        padding: 0 1em;
+    }
+}
