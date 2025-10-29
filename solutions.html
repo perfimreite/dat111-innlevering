@@ -4,76 +4,74 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>TechCare - Løysningar</title>
-        <link rel="stylesheet" href="./css/style_per.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
         <header>
             <nav>
-                <a class="nav-link" id="home" href="index.html">Heim</a>
-                <a class="nav-link" href="solutions.html">Løysningar</a>
-                <a class="nav-link" href="status.html">Status</a>
-                <a class="nav-link" href="sustainability.html">Berekraft</a>
-                <a class="nav-link" href="contact.html">Kontakt oss</a>
+                <ul>
+                    <li id="home"><a name="lenkje til heim-side" class="nav-link" href="index.html">Heim</a></li>
+                    <li><a name="lenkje til løysnings-side" class="nav-link" href="solutions.html">Løysningar</a></li>
+                    <li><a name="lenkje til status-side" class="nav-link" href="status.html">Status</a></li>
+                    <li><a name="lenkje til berekraft-side" class="nav-link" href="sustainability.html">Berekraft</a></li>
+                    <li><a name="lenkje til kontakt-side" class="nav-link" href="contact.html">Kontakt oss</a></li>
+                    <li><a name="lenkje til nyheitsbrev-side" class="nav-link" href="newsletter.html">Nyheitsbrev</a></li>
+                </ul>
             </nav>
         </header>
 
-        <h1>Våre løysningar og resultat</h1>
-
-        <div class="info">
-            <div class="info-container red">
-                <b>Digital helseplattform for Sunnfjord kommune</b>
-                <p>
-                    Vår digitale helseplattform, TechCare, er ei komplett løysing for Sunnfjord kommune som samlar alle
-                    relevante helsetenester og teknologiske verktøy i eit brukarbegrunna, sentralisert system.
-                    Plattformen integrerer sensorar, tryggleiksalarmer, digitale oppfølgingstenester og
-                    kommunikasjonsverktøy slik at informasjon flyt sømløst mellom brukar, pårørande og heimepleie.
-                    Brukargrensesnittene er enkle og intuitive, både på mobil, nettbrett og datamaskin, med tilpasset
-                    visning av status, varsling og historikk. Målet er at alle – uansett teknisk erfaring – skal føle
-                    seg trygge på å bruke plattformen, få oversikt over eigen helse og ta aktive val i kvardagen.
-                </p>
+        <main>
+            <h1>Våre løysningar og resultat</h1>
+            <div id="solutions-container">
+                <div class="red">
+                    <b>Digital helseplattform for Sunnfjord kommune</b>
+                    <p>
+                        Vår digitale helseplattform, TechCare, er ei komplett løysing for Sunnfjord kommune som samlar alle relevante helsetenester og
+                        teknologiske verktøy i eit brukarbegrunna, sentralisert system. Plattformen integrerer sensorar, tryggleiksalarmer, digitale
+                        oppfølgingstenester og kommunikasjonsverktøy slik at informasjon flyt sømløst mellom brukar, pårørande og heimepleie.
+                        Brukargrensesnittene er enkle og intuitive, både på mobil, nettbrett og datamaskin, med tilpasset visning av status, varsling
+                        og historikk. Målet er at alle – uansett teknisk erfaring – skal føle seg trygge på å bruke plattformen, få oversikt over
+                        eigen helse og ta aktive val i kvardagen.
+                    </p>
+                </div>
+                <div class="blue">
+                    <b>Påliteleg og oversiktleg informasjon</b>
+                    <p>
+                        Vi legg stor vekt på at all informasjon som vert vist og delt i plattforma skal vere korrekt og oppdatert. Det inneber at
+                        datakjelder er kvalitetssikra, sensorane skal verifiserast, og eventuelle rapportar eller målingar skal ha klare
+                        metadatapunkter (tid, stad, sensorstatus) for å kunne vurderast på riktig måte. Vi følgjer nasjonale standardar for helsedata
+                        og personvern, slik det er krav om – til dømes sikre lagringsløysingar, kryptering og tilgangskontroll. Brukarane og pårørande
+                        får tydelege varsel dersom noko manglar eller verkar feil. Gjennom transparente loggar og dokumentasjon kan ein også spore kor
+                        informasjon kjem frå og kven som har brukt den.
+                    </p>
+                </div>
+                <div class="blue">
+                    <b>Automatiserte prosessar</b>
+                    <p>
+                        Automatisering er ei av nøklene til å få helse- og omsorgstenestene til å fungere betre utan at arbeidsmengda veks for
+                        heimepleien. I TechCare kan vi automatisere fleire trinn: varsling ved unormale sensoravvik (temperatur, bevegelse etc.),
+                        automatisk dagleg rapportering til helsepersonell, automatisk planlegging av rutinebesøk og oppfølgingar basert på data, og
+                        digitale sjekklister for stell og medisinering. Dette reduserer manuell administrasjon, minimerer risiko for feil og frigjer
+                        tid som dei tilsette kan bruke på den menneskelege omsorga. Automatisering betyr òg raskare respons ved behov og meir proaktiv
+                        oppfølging i staden for berre reaktiv hjelp.
+                    </p>
+                </div>
+                <div class="red">
+                    <b>Betre kvardag for heimebuande eldre/sjuke, pårørande og heimesjukepleiarar</b>
+                    <p>
+                        Med TechCare får heimebuande eldre og sjuke betre moglegheit til å leve trygt og sjølvstendig i eigen heim – lenger. Sensorar
+                        og tryggleiksalarmer gir tryggleik ved å varsle om fall, brå temperaturendringar eller andre helsespørsmål, slik at hjelp kan
+                        setjast inn tidleg. Pårørande får innsikt og ro, fordi dei kan følgje med utan å måtte vere fysisk til stades, og kjenne at
+                        den dei bryr seg om får god omsorg. For heimepleien betyr plattforma meir oversikt og betre ressursbruk – mindre papirarbeid,
+                        færre overraskingar, betre planlegging og moglegheit til å prioritere meir tid til direkte pleie. Til saman gir dette ein
+                        kvardag med meir tryggheit, mindre stress og auka livskvalitet for alle involverte.
+                    </p>
+                </div>
             </div>
-            <div class="info-container blue">
-                <b>Påliteleg og oversiktleg informasjon</b>
-                <p>
-                    Vi legg stor vekt på at all informasjon som vert vist og delt i plattforma skal vere korrekt og
-                    oppdatert. Det inneber at datakjelder er kvalitetssikra, sensorane skal verifiserast, og eventuelle
-                    rapportar eller målingar skal ha klare metadatapunkter (tid, stad, sensorstatus) for å kunne
-                    vurderast på riktig måte. Vi følgjer nasjonale standardar for helsedata og personvern, slik det er
-                    krav om – til dømes sikre lagringsløysingar, kryptering og tilgangskontroll. Brukarane og pårørande
-                    får tydelege varsel dersom noko manglar eller verkar feil. Gjennom transparente loggar og
-                    dokumentasjon kan ein også spore kor informasjon kjem frå og kven som har brukt den.
-                </p>
-            </div>
-            <div class="info-container blue">
-                <b>Automatiserte prosessar</b>
-                <p>
-                    Automatisering er ei av nøklene til å få helse- og omsorgstenestene til å fungere betre utan at
-                    arbeidsmengda veks for heimepleien. I TechCare kan vi automatisere fleire trinn: varsling ved
-                    unormale sensoravvik (temperatur, bevegelse etc.), automatisk dagleg rapportering til
-                    helsepersonell, automatisk planlegging av rutinebesøk og oppfølgingar basert på data, og digitale
-                    sjekklister for stell og medisinering. Dette reduserer manuell administrasjon, minimerer risiko for
-                    feil og frigjer tid som dei tilsette kan bruke på den menneskelege omsorga. Automatisering betyr òg
-                    raskare respons ved behov og meir proaktiv oppfølging i staden for berre reaktiv hjelp.
-                </p>
-            </div>
-            <div class="info-container red">
-                <b>Betre kvardag for heimebuande eldre/sjuke, pårørande og heimesjukepleiarar</b>
-                <p>
-                    Med TechCare får heimebuande eldre og sjuke betre moglegheit til å leve trygt og sjølvstendig i
-                    eigen heim – lenger. Sensorar og tryggleiksalarmer gir tryggleik ved å varsle om fall, brå
-                    temperaturendringar eller andre helsespørsmål, slik at hjelp kan setjast inn tidleg. Pårørande får
-                    innsikt og ro, fordi dei kan følgje med utan å måtte vere fysisk til stades, og kjenne at den dei
-                    bryr seg om får god omsorg. For heimepleien betyr plattforma meir oversikt og betre ressursbruk –
-                    mindre papirarbeid, færre overraskingar, betre planlegging og moglegheit til å prioritere meir tid
-                    til direkte pleie. Til saman gir dette ein kvardag med meir tryggheit, mindre stress og auka
-                    livskvalitet for alle involverte.
-                </p>
-            </div>
-        </div>
+        </main>
 
         <footer>
             <div>
-                <b>Følg Oss!</b>
                 <div id="socials-container">
                     <a href="https://facebook.com/"><img src="./img/icons/facebook.png" alt="facebook" /></a>
                     <a href="https://instagram.com/"><img src="./img/icons/instagram.png" alt="instagram" /></a>
