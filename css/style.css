@@ -1,7 +1,8 @@
 /* ================================================
                     Variables
    ================================================ */
-:root {
+
+   :root {
     --primary-color: green;
 }
 
@@ -9,9 +10,7 @@
                     Default elements
    ================================================ */
 
-*,
-*::before,
-*::after {
+* {
     box-sizing: border-box;
 }
 body {
@@ -45,6 +44,7 @@ img {
 /* ================================================
                       Header 
    ================================================ */
+
 header {
     padding: 1rem 4rem;
     background-color: whitesmoke;
@@ -119,6 +119,11 @@ footer {
     height: 25rem;
 }
 
+#who-why-where {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 /* ================================================
                       solutions.html 
    ================================================ */
@@ -139,15 +144,6 @@ footer {
 
 .blue {
     border: solid blue 0.125rem;
-}
-
-.UN-goal {
-    width: 10rem;
-}
-
-.img-container {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 /* ================================================
@@ -187,6 +183,15 @@ footer {
     width: 45ch;
 }
 
+.img-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.UN-goal {
+    max-width: 12rem;
+}
+
 #illustration {
     max-width: 30rem;
 }
@@ -196,7 +201,7 @@ footer {
    ================================================ */
 
 #contact-container {
-    margin-block: 2rem;
+    margin-block: 8rem;
     display: flex;
     align-items: center;
 }
@@ -206,28 +211,36 @@ footer {
 }
 
 #sunnfjord-kommunevåpen {
-    max-width: 25rem;
+    max-width: 30rem;
 }
 
 /* ================================================
                     newsletter.html 
    ================================================ */
 
+#newsletter-container {
+    margin-block: 4rem;
+}
+
 #newsletter-form {
-    display: grid;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    font-size: 1.25rem;
 }
 
 #newsletter-form input {
     padding: 1rem;
     border: 0.125rem solid gray;
+    border-radius: 1rem;
+    max-width: 40rem;
+    font-size: 1.25rem;
 }
 
 #newsletter-btn {
     background-color: green;
     color: white;
     border-radius: 1rem;
-    border: none;
 }
 
 /* ================================================
@@ -240,8 +253,16 @@ footer {
 }
 
 @media (max-width: 1280px) {
+    header {
+        padding: 1rem;
+    }
+
     #hero {
         flex-direction: column;
+    }
+
+    #who-why-where {
+        grid-template-columns: none;
     }
 
     #solutions-container {
@@ -252,12 +273,33 @@ footer {
         grid-template-columns: none;
     }
 
+    #sustainability-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     #contact-container {
         flex-direction: column;
     }
+    
+    #newsletter-container {
+        margin-block: 1rem;
+    }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 960px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    nav > ul {
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
     body {
         font-size: 0.75rem;
     }
@@ -265,6 +307,11 @@ footer {
     main {
         margin: 2rem;
     }
+    
+    .img-container {
+        flex-direction: column;
+    }
+
 }
 
 @media (prefers-reduced-motion: reduce) {

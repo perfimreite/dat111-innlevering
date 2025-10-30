@@ -10,12 +10,12 @@
         <header>
             <nav>
                 <ul>
-                    <li id="home"><a name="lenkje til heim-side" class="nav-link" href="index.html">Heim</a></li>
-                    <li><a name="lenkje til løysnings-side" class="nav-link" href="solutions.html">Løysningar</a></li>
-                    <li><a name="lenkje til status-side" class="nav-link" href="status.html">Status</a></li>
-                    <li><a name="lenkje til berekraft-side" class="nav-link" href="sustainability.html">Berekraft</a></li>
-                    <li><a name="lenkje til kontakt-side" class="nav-link" href="contact.html">Kontakt oss</a></li>
-                    <li><a name="lenkje til nyheitsbrev-side" class="nav-link" href="newsletter.html">Nyheitsbrev</a></li>
+                    <li id="home"><a class="nav-link" href="index.html">Heim</a></li>
+                    <li><a class="nav-link" href="solutions.html">Løysningar</a></li>
+                    <li><a class="nav-link" href="status.html">Status</a></li>
+                    <li><a class="nav-link" href="sustainability.html">Berekraft</a></li>
+                    <li><a class="nav-link" href="contact.html">Kontakt oss</a></li>
+                    <li><a class="nav-link" href="newsletter.html">Nyheitsbrev</a></li>
                 </ul>
             </nav>
         </header>
@@ -23,21 +23,26 @@
         <main>
             <h1>Abonner på vårt nyheitsbrev!</h1>
             <section id="newsletter-container">
-                <p>Hald deg oppdatert på TechCare og motta jamlege oppdateringar</p>
+                <h2>Meld deg på</h2>
+                <p>Hald deg oppdatert på TechCare og motta jamlege oppdateringar.</p>
                 <hr class="divider" />
                 <form id="newsletter-form">
-                    <label for="namn">Name:</label>
-                    <input type="text" id="name" name="namn" placeholder="Ola Nordmann" aria-placeholder="Ola Nordmann" required />
-                    <label for="email">Email:</label>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="namn" placeholder="Ola Nordmann" required aria-required="true" />
+                    <label for="phone-number">Mobilnummer:</label>
                     <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="ola.nordmann@gmail.com"
-                        aria-placeholder="ola.nordmann@gmail.com"
+                        type="tel"
+                        id="phone-number"
+                        name="mobilnummer"
+                        placeholder="12345678"
+                        minlength="8"
+                        maxlength="8"
                         required
+                        aria-required="true"
                     />
-                    <input id="newsletter-btn" role="button" type="submit" value="Abonner" />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="ola.nordmann@gmail.com" required aria-required="true" />
+                    <input id="newsletter-btn" type="submit" value="Abonner" />
                 </form>
             </section>
         </main>
@@ -52,6 +57,6 @@
             </div>
             <p>&copy; 2025 TechCare. Alle rettar reservert.</p>
         </footer>
+        <script src="./script.js"></script>
     </body>
-    <script src="./script.js"></script>
 </html>
